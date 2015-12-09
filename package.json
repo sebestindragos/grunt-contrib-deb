@@ -1,0 +1,19 @@
+{
+  "name": "grunt-contrib-deb",
+  "description": "Grunt task for creating .deb packages",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sebestindragos/grunt-contrib-deb",
+  "author": {
+    "name": "Sebestin Dragos",
+    "email": "sebestin.dragos@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebestindragos/grunt-contrib-deb.git"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/sebestindragos/grunt-contrib-deb/blob/master/LICENSE"
+  }],
+  "keywords": ["deb", "grunt deb"]
+}
