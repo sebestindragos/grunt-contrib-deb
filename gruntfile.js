@@ -3,15 +3,14 @@ module.exports = function (grunt) {
     deb: {
       ia: {
         options: {
-          control: {
-            Package: 'installeranalytics',
-            Version: '1.0.1-4088',
-            Section: 'misc',
-            Priority: 'optional',
-            Architecture: 'amd64',
-            Depends: '',
-            Maintainer: 'Dragos Sebestin dragos.sebestin@gmail.com',
-            Description: 'my description will go here'
+          package: grunt.file.readJSON('./package.json'),
+          info: {
+            rev: '4088',
+            arch: 'amd64',
+            //targetDir: '../JobIA/dist/'
+            scripts: {
+              postinst: './test/control/postinst',
+            }
           }
         },
         files: [{

@@ -2,7 +2,7 @@ var deb = require('../lib/deb.js');
 
 module.exports = function (grunt) {
   grunt.registerMultiTask('deb', 'package node apps into debian installers', function() {
-    var debPkg = deb();
+    var debPkg = deb(grunt);
     
     var done = this.async();
     
