@@ -65,3 +65,6 @@ grunt.loadNpmTasks('deb');
 grunt.registerTask('deploy', ['deb']);
 ```
 
+## License
+
+MIT
