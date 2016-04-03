@@ -35,6 +35,7 @@ grunt.initConfig({
           rev: '512', // optional revision number
           arch: 'amd64', // optional architecture type
           targetDir: './dist', // optional folder where to build the .deb package
+          tmpPath: './tmp', // optional temporary files path
           scripts: {
             preinst: './deb/scripts/preinst', // optional pre install script
             postinst: './deb/scripts/postinst', // optional post install script
@@ -42,7 +43,7 @@ grunt.initConfig({
             postrem: './deb/scripts/postrem', // optional post remove script
           }
         }
-      }, 
+      },
       files: [{
         src: ['src/**', '!tests/**'],
         dest: '/srv/myproject',
